@@ -1,0 +1,22 @@
+#spring:
+#  datasource:
+#    #使用MySQL数据库驱动程序
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+#    #数据库URL地址
+#    url: jdbc:mysql://localhost:3306/book?serverTimezone=UTC
+#    #连接数据库的用户名
+#    username: root
+#    #连接数据库的密码
+#    password: yuxiang!123
+#  jpa:
+#    #指定显示SQL语句
+#    show-sql: true
+#    #指定根据实体自动建表
+#    generate-ddl: true
+#    open-in-view: true
+#  security:
+#    user:
+#      name: jinyuxiang
+#      password: yuxiang!123
+#server:
+#  port: 8080

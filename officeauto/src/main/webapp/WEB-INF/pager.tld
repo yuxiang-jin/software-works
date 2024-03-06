@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<taglib xmlns="http://java.sun.com/xml/ns/javaee"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+                            http://java.sun.com/xml/ns/javaee/web-jsptaglibrary_2_1.xsd"
+                            version="2.1">
+    <!--描述：自定义标签版本的一种描述-->
+    <description>Pager 1.0 core library</description>
+    <!--显示的名称：导包进行的一个展示-->
+    <display-name>Pager core</display-name>
+    <!--版本号-->
+    <tlib-version>1.0</tlib-version>
+    <!--短名称-->
+    <short-name>yuxiang</short-name>
+    <!--uri：标签使用者需要导入的包名-->
+    <uri>/pager-tags</uri>
+    <!--定义一个标签-->
+    <tag>
+        <!--标签名-->
+        <name>pager</name>
+        <!--标签处理类-->
+        <tag-class>org.yuxiang.jin.officeauto.commonutil.pager.PagerTag</tag-class>
+        <!--设置标签为空-->
+        <body-content>empty</body-content>
+        <!--定义标签的属性-->
+        <attribute>
+            <!--属性名：表示分页的第几页-->
+            <name>pageIndex</name>
+            <!--required表示该属性是否必须，true表示属性必须存在，false表示属性可以不存在-->
+            <required>true</required>
+            <!--rtexprvalue 表示run time expression value（运行时是否支持表达式），为true支持EL表达式-->
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        <!--定义标签的属性-->
+        <attribute>
+            <!--属性名：表示分页标签，每页显示多少条数据-->
+            <name>pageSize</name>
+            <!--required表示该属性是否必须，true表示属性必须存在，false表示属性可以不存在-->
+            <required>true</required>
+            <!--rtexprvalue 表示run time expression value（运行时是否支持表达式），为true支持EL表达式-->
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        <!--定义标签的属性-->
+        <attribute>
+            <!--属性名：表示记录总数-->
+            <name>recordCount</name>
+            <!--required表示该属性是否必须，true表示属性必须存在，false表示属性可以不存在-->
+            <required>true</required>
+            <!--rtexprvalue 表示run time expression value（运行时是否支持表达式），为true支持EL表达式-->
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        <!--定义标签的属性-->
+        <attribute>
+            <!--属性名-->
+            <name>submitUrl</name>
+            <!--required表示该属性是否必须，true表示属性必须存在，false表示属性可以不存在-->
+            <required>true</required>
+            <!--rtexprvalue 表示run time expression value（运行时是否支持表达式），为true支持EL表达式-->
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        <!--定义标签的属性-->
+        <attribute>
+            <!--属性名-->
+            <name>style</name>
+            <!--required表示该属性是否必须，true表示属性必须存在，false表示属性可以不存在-->
+            <required>false</required>
+            <!--rtexprvalue 表示run time expression value（运行时是否支持表达式），为true支持EL表达式-->
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+    </tag>
+</taglib>
